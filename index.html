@@ -3,212 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Zone: Tu Mundo de Videojuegos</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio - Eventos de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .catalogo {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .juego {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            max-width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .juego img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .proximos-juegos {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .proximos-juegos h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .proximos-juegos img {
+            width: 300px; /* Tamaño uniforme */
+            height: 200px; /* Proporciones consistentes */
+            margin: 10px;
+            filter: grayscale(100%);
+            border-radius: 8px;
+            transition: filter 0.3s ease;
+            object-fit: cover; /* Ajusta la imagen para que no se deforme */
+        }
+        .proximos-juegos img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="bg-dark text-white text-center py-4">
-        <h1>Gaming Zone</h1>
-        <p>Explora, conecta y vive tu pasión por los videojuegos</p>
+    <header>
+        <h1>Eventos de Videojuegos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="page1.html">Concursos</a></li>
+                <li><a href="page2.html">Historia</a></li>
+                <li><a href="page3.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#juegos-favoritos">Juegos Favoritos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#plataformas">Plataformas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#novedades">Novedades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#formulario">Contáctanos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Contenido Principal -->
-    <main class="container my-4">
-        <!-- Sección: Juegos Favoritos -->
-        <section id="juegos-favoritos" class="mb-5">
-            <h2 class="text-center mb-4">Juegos Favoritos</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2217/LsaRVLF2IU2L1FNtu9d3MKLq.jpg" class="card-img-top" alt="God of War">
-                        <div class="card-body">
-                            <h5 class="card-title">God of War (2018)</h5>
-                            <p class="card-text">Acompaña a Kratos y Atreus en una épica aventura llena de emociones en el mundo de la mitología nórdica.</p>
-                        </div>
-                    </div>
+    <main>
+        <section>
+            <p>Bienvenidos a nuestra página de eventos de videojuegos. Aquí encontrarás los juegos disponibles esta temporada y las últimas novedades del mundo gamer.</p>
+        </section>
+        <section>
+            <h2>Juegos en Catálogo</h2>
+            <div class="catalogo">
+                <div class="juego">
+                    <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000012332/ac4d1fc9824876ce756406f0525d50c57ded4b2a666f6dfe40a6ac5c3563fad9" alt="Super Smash Bros">
+                    <h3>Super Smash Bros</h3>
+                    <p>Compite con personajes icónicos en emocionantes batallas.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://assetsio.gnwcdn.com/eurogamer-zjp1vx.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" class="card-img-top" alt="GTA V">
-                        <div class="card-body">
-                            <h5 class="card-title">GTA V</h5>
-                            <p class="card-text">Explora Los Santos en un mundo abierto lleno de acción, narrativa única y posibilidades infinitas.</p>
-                        </div>
-                    </div>
+                <div class="juego">
+                    <img src="https://lh6.googleusercontent.com/proxy/3doA2peWtWGF1OZ74r30wweEU2AE9lm1D8QYOJyrlZj59TsuEDKF8NaxwHUiTgiIslR8desTF-QM9qRxL3XWvn_0dD1T5bpeEvi1o3yhADB0TXkTnBU7oFsPA0Q" alt="Clash Royale">
+                    <h3>Clash Royale</h3>
+                    <p>Construye tu mazo y domina a tus oponentes en batallas épicas.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://i.blogs.es/b929e9/uncharted4/1366_2000.jpeg" class="card-img-top" alt="Uncharted 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Uncharted 4</h5>
-                            <p class="card-text">Sigue a Nathan Drake en su búsqueda del tesoro de Henry Avery en un viaje inolvidable.</p>
-                        </div>
-                    </div>
+                <div class="juego">
+                    <img src="https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6" alt="Counter-Strike: Global Offensive">
+                    <h3>Counter-Strike: GO</h3>
+                    <p>Demuestra tus habilidades en este clásico de disparos tácticos.</p>
                 </div>
             </div>
         </section>
-
-        <!-- Sección: Plataformas -->
-        <section id="plataformas" class="mb-5">
-            <h2 class="text-center mb-4">Plataformas de Videojuegos</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">PC</h5>
-                            <p class="card-text">La PC es una de las plataformas más flexibles, ideal para jugar títulos como, League of Legends, CS:GO y Cyberpunk 2077.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">PlayStation</h5>
-                            <p class="card-text">La PlayStation cuenta con exclusivos como God of War, The Last of Us, y Horizon Zero Dawn, que definen su calidad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Xbox</h5>
-                            <p class="card-text">Xbox ofrece títulos como Halo, Forza Horizon, y Gears of War, además de Game Pass como ventaja competitiva.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Nintendo Switch</h5>
-                            <p class="card-text">Con juegos como Zelda: Breath of the Wild, Mario Kart 8 Deluxe, y Animal Crossing, es ideal para toda la familia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Dispositivos Móviles</h5>
-                            <p class="card-text">Juega títulos populares como Genshin Impact, PUBG Mobile, y Call of Duty Mobile, en cualquier lugar.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección: Novedades -->
-        <section id="novedades" class="mb-5">
-            <h2 class="text-center mb-4">Novedades en Videojuegos</h2>
-            <table class="table table-striped">
-                <tr>
-                    <th>Juego</th>
-                    <th>Fecha de Lanzamiento</th>
-                    <th>Plataforma</th>
-                    <th>Trailer</th>
-                </tr>
-                <tr>
-                    <td>GTA VI</td>
-                    <td>2025</td>
-                    <td>Xbox y playstation</td>
-                    <td>
-                        <iframe width="300" height="200" src="https://www.youtube.com/embed/QdBZY2fkU-0" frameborder="0" allowfullscreen></iframe>
-                    </td>
-                </tr>
-                <tr>
-                    <td>assassin's creed shadows</td>
-                    <td>14 de febrero de 2025</td>
-                    <td>PC, Xbox</td>
-                    <td>
-                        <iframe width="300" height="200" src="https://www.youtube.com/embed/vovkzbtYBC8" frameborder="0" allowfullscreen></iframe>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+        <section class="proximos-juegos">
+            <h2>Próximos Juegos</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Call_of_Duty_Black_Ops_-_Teaser_Logo.jpg" alt="Call of Duty Black Ops 2">
+            <img src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-6608fb6c4c56c07b9a7caa34c6e6ee37" alt="Valorant">
+            <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2022/8/1/ksfga6rlx2ugfhjd9vnk/league-of-legends" alt="League of Legends">
         </section>
     </main>
-
-    <main class="container my-4">
-        <!-- Sección Formulario -->
-        <section id="formulario">
-            <h2 class="text-center">Formulario de Registro</h2>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo" placeholder="email@example.com" required>
-                    <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
-                </div>
-                <div class="col-md-12">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
-                    <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="preferencia" class="form-label">Preferencia</label>
-                    <select class="form-select" id="preferencia" required>
-                        <option value="" disabled selected>Elige una opción</option>
-                        <option value="juegos">Juegos</option>
-                        <option value="música">Música</option>
-                        <option value="tecnología">Tecnología</option>
-                    </select>
-                    <div class="invalid-feedback">Selecciona una preferencia.</div>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Género</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="genero" id="genero1" value="masculino" required>
-                        <label class="form-check-label" for="genero1">Masculino</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="genero" id="genero2" value="femenino" required>
-                        <label class="form-check-label" for="genero2">Femenino</label>
-                    </div>
-                    <div class="invalid-feedback">Selecciona tu género.</div>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="terminos" required>
-                        <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
-                        <div class="invalid-feedback">Debes aceptar los términos y condiciones.</div>
-                    </div>
-                </div>
-                <div class="col-12 text-center">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>Todos los derechos reservados &copy; 2024</p>
+    <footer>
+        <p>&copy; 2024 Eventos de Videojuegos. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
